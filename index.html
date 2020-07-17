@@ -1,0 +1,52 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="initial-scale = 1,maximum-scale = 0.8,minimum-scale=0.1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker3.standalone.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+<body class="h-100 bg-secondary" style="margin:auto;">
+   <div class="container h-100">
+      <div class="row justify-content-center h-100">
+         <div class="col-sm-6 align-self-center text-center">
+            <div class="card shadow">
+               <div class="card-body">
+                  <form >
+                  <div class="form-group row">
+                  </div>
+                  <div class="form-group">
+                     <label  for="exampleInputEmail1">¿Hachemo las pace?</label>
+                  
+                  </div>
+                 
+                  <div class="form-group">
+                    <button type="submit" onclick="myFunction()" class="btn btn-primary">SI</button>
+                  <button type="submit" onclick="myFunction()" id="status" class="btn btn-secondary"><span>NO</span></button>
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+       $(document).ready(function(){
+    $('#status').hover(function() {
+        $(this).find('span').text('SI');
+    }, function() {
+        $(this).find('span').text('NO');
+    });
+});
+
+function myFunction()
+{
+    alert("Te amo pechechachucha");
+}
+   </script>
+</body>
